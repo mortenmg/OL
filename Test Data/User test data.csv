@@ -1,0 +1,33 @@
+Navn;Studienummer;Stregkode;Retning;Gruppe;Rank
+Rus 1;s130001;1001;Byg;A;Rus
+Rus 2;s130002;1002;Byg;B;Rus
+Rus 3;s130003;1003;Byg;C;Rus
+Rus 4;s130004;1004;Byg;D;Rus
+Rus 5;s130005;1005;IT & Komm;A;Rus
+Rus 6;s130006;1006;IT & Komm;B;Rus
+Rus 7;s130007;1007;IT & Komm;D;Rus
+Rus 8;s130008;1008;Mat. Tek.;A;Rus
+Rus 9;s130009;1009;Mat. Tek.;B;Rus
+Rus 10;s130010;1010;Mat. Tek.;C;Rus
+Rus 11;s130011;1011;Fys. Nano;A;Rus
+Rus 12;s130012;1012;Fys. Nano;B;Rus
+Rus 13;s130013;1013;Fys. Nano;C;Rus
+Rus 14;s130014;1014;Fys. Nano;D;Rus
+Rus 15;s130015;1015;TBM;A;Rus
+Rus 16;s130016;1016;TBM;B;Rus
+Rus 17;s130017;1017;TBM;C;Rus
+Rus 18;s130018;1018;Space;A;Rus
+Rus 19;s130019;1019;Space;B;Rus
+Rus 20;s130020;1020;Space;D;Rus
+Vektor 1;sXX0001;1021;Byg. Beton;A;Vektor
+Vektor 2;sXX0002;1022;Space;B;Vektor
+Vektor 3;sXX0003;1023;Elektro;C;Vektor
+Vektor 4;sXX0004;1024;IT & Komm;D;Vektor
+Vektor 5;sXX0005;1025;TBM;E;Vektor
+Vektor 6;sXX0006;1026;Byg. Design;F;Vektor
+Vektor 7;sXX0007;1027;Mat. Tek.;G;Vektor
+Vektor 8;sXX0008;1028;Fys. Nano;H;Vektor
+Hyttebums 1;sXX0009;1029;Space;Bums;Bums
+Hyttebums 2;sXX0010;1030;Elektro;Bums;Bums
+Hyttebums 3;sXX0011;1031;TBM;Bums;Bums
+KABS;sXX0012;1032;Mat. Tek.;I;KABS

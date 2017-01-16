@@ -1,0 +1,300 @@
+Navn;Studienummer;Stregkode;Retning;Gruppe;Rank
+Rus 1;s130001;1001;Byg;A;Rus
+Rus 2;s130002;1002;Byg;B;Rus
+Rus 3;s130003;1003;Byg;C;Rus
+Rus 4;s130004;1004;Byg;D;Rus
+Rus 5;s130005;1005;IT & Komm;A;Rus
+Rus 6;s130006;1006;IT & Komm;B;Rus
+Rus 7;s130007;1007;IT & Komm;D;Rus
+Rus 8;s130008;1008;Mat. Tek.;A;Rus
+Rus 9;s130009;1009;Mat. Tek.;B;Rus
+Rus 10;s130010;1010;Mat. Tek.;C;Rus
+Rus 11;s130011;1011;Fys. Nano;A;Rus
+Rus 12;s130012;1012;Fys. Nano;B;Rus
+Rus 13;s130013;1013;Fys. Nano;C;Rus
+Rus 14;s130014;1014;Fys. Nano;D;Rus
+Rus 15;s130015;1015;TBM;A;Rus
+Rus 16;s130016;1016;TBM;B;Rus
+Rus 17;s130017;1017;TBM;C;Rus
+Rus 18;s130018;1018;Space;A;Rus
+Rus 19;s130019;1019;Space;B;Rus
+Rus 20;s130020;1020;Space;D;Rus
+Rus 21;s130021;1021;Byg;A;Rus
+Rus 22;s130022;1022;Byg;B;Rus
+Rus 23;s130023;1023;Byg;C;Rus
+Rus 24;s130024;1024;Byg;D;Rus
+Rus 25;s130025;1025;IT & Komm;A;Rus
+Rus 26;s130026;1026;IT & Komm;B;Rus
+Rus 27;s130027;1027;IT & Komm;D;Rus
+Rus 28;s130028;1028;Mat. Tek.;A;Rus
+Rus 29;s130029;1029;Mat. Tek.;B;Rus
+Rus 30;s130030;1030;Mat. Tek.;C;Rus
+Rus 31;s130031;1031;Fys. Nano;A;Rus
+Rus 32;s130032;1032;Fys. Nano;B;Rus
+Rus 33;s130033;1033;Fys. Nano;C;Rus
+Rus 34;s130034;1034;Fys. Nano;D;Rus
+Rus 35;s130035;1035;TBM;A;Rus
+Rus 36;s130036;1036;TBM;B;Rus
+Rus 37;s130037;1037;TBM;C;Rus
+Rus 38;s130038;1038;Space;A;Rus
+Rus 39;s130039;1039;Space;B;Rus
+Rus 40;s130040;1040;Space;D;Rus
+Rus 41;s130041;1041;Byg;A;Rus
+Rus 42;s130042;1042;Byg;A;Rus
+Rus 43;s130043;1043;Byg;B;Rus
+Rus 44;s130044;1044;Byg;C;Rus
+Rus 45;s130045;1045;Byg;D;Rus
+Rus 46;s130046;1046;IT & Komm;A;Rus
+Rus 47;s130047;1047;IT & Komm;B;Rus
+Rus 48;s130048;1048;IT & Komm;D;Rus
+Rus 49;s130049;1049;Mat. Tek.;A;Rus
+Rus 50;s130050;1050;Mat. Tek.;B;Rus
+Rus 51;s130051;1051;Mat. Tek.;C;Rus
+Rus 52;s130052;1052;Fys. Nano;A;Rus
+Rus 53;s130053;1053;Fys. Nano;B;Rus
+Rus 54;s130054;1054;Fys. Nano;C;Rus
+Rus 55;s130055;1055;Fys. Nano;D;Rus
+Rus 56;s130056;1056;TBM;A;Rus
+Rus 57;s130057;1057;TBM;B;Rus
+Rus 58;s130058;1058;TBM;C;Rus
+Rus 59;s130059;1059;Space;A;Rus
+Rus 60;s130060;1060;Space;B;Rus
+Rus 61;s130061;1061;Space;D;Rus
+Rus 62;s130062;1062;Byg;A;Rus
+Rus 63;s130063;1063;Byg;B;Rus
+Rus 64;s130064;1064;Byg;C;Rus
+Rus 65;s130065;1065;Byg;D;Rus
+Rus 66;s130066;1066;IT & Komm;A;Rus
+Rus 67;s130067;1067;IT & Komm;B;Rus
+Rus 68;s130068;1068;IT & Komm;D;Rus
+Rus 69;s130069;1069;Mat. Tek.;A;Rus
+Rus 70;s130070;1070;Mat. Tek.;B;Rus
+Rus 71;s130071;1071;Mat. Tek.;C;Rus
+Rus 72;s130072;1072;Fys. Nano;A;Rus
+Rus 73;s130073;1073;Fys. Nano;B;Rus
+Rus 74;s130074;1074;Fys. Nano;C;Rus
+Rus 75;s130075;1075;Fys. Nano;D;Rus
+Rus 76;s130076;1076;TBM;A;Rus
+Rus 77;s130077;1077;TBM;B;Rus
+Rus 78;s130078;1078;TBM;C;Rus
+Rus 79;s130079;1079;Space;A;Rus
+Rus 80;s130080;1080;Space;B;Rus
+Rus 81;s130081;1081;Space;D;Rus
+Rus 82;s130082;1082;Byg;A;Rus
+Rus 83;s130083;1083;Byg;A;Rus
+Rus 84;s130084;1084;Byg;B;Rus
+Rus 85;s130085;1085;Byg;C;Rus
+Rus 86;s130086;1086;Byg;D;Rus
+Rus 87;s130087;1087;IT & Komm;A;Rus
+Rus 88;s130088;1088;IT & Komm;B;Rus
+Rus 89;s130089;1089;IT & Komm;D;Rus
+Rus 90;s130090;1090;Mat. Tek.;A;Rus
+Rus 91;s130091;1091;Mat. Tek.;B;Rus
+Rus 92;s130092;1092;Mat. Tek.;C;Rus
+Rus 93;s130093;1093;Fys. Nano;A;Rus
+Rus 94;s130094;1094;Fys. Nano;B;Rus
+Rus 95;s130095;1095;Fys. Nano;C;Rus
+Rus 96;s130096;1096;Fys. Nano;D;Rus
+Rus 97;s130097;1097;TBM;A;Rus
+Rus 98;s130098;1098;TBM;B;Rus
+Rus 99;s130099;1099;TBM;C;Rus
+Rus 100;s130100;1100;Space;A;Rus
+Rus 101;s130101;1101;Space;B;Rus
+Rus 102;s130102;1102;Space;D;Rus
+Rus 103;s130103;1103;Byg;A;Rus
+Rus 104;s130104;1104;Byg;B;Rus
+Rus 105;s130105;1105;Byg;C;Rus
+Rus 106;s130106;1106;Byg;D;Rus
+Rus 107;s130107;1107;IT & Komm;A;Rus
+Rus 108;s130108;1108;IT & Komm;B;Rus
+Rus 109;s130109;1109;IT & Komm;D;Rus
+Rus 110;s130110;1110;Mat. Tek.;A;Rus
+Rus 111;s130111;1111;Mat. Tek.;B;Rus
+Rus 112;s130112;1112;Mat. Tek.;C;Rus
+Rus 113;s130113;1113;Fys. Nano;A;Rus
+Rus 114;s130114;1114;Fys. Nano;B;Rus
+Rus 115;s130115;1115;Fys. Nano;C;Rus
+Rus 116;s130116;1116;Fys. Nano;D;Rus
+Rus 117;s130117;1117;TBM;A;Rus
+Rus 118;s130118;1118;TBM;B;Rus
+Rus 119;s130119;1119;TBM;C;Rus
+Rus 120;s130120;1120;Space;A;Rus
+Rus 121;s130121;1121;Space;B;Rus
+Rus 122;s130122;1122;Space;D;Rus
+Rus 123;s130123;1123;Byg;A;Rus
+Rus 124;s130124;1124;Byg;A;Rus
+Rus 125;s130125;1125;Byg;B;Rus
+Rus 126;s130126;1126;Byg;C;Rus
+Rus 127;s130127;1127;Byg;D;Rus
+Rus 128;s130128;1128;IT & Komm;A;Rus
+Rus 129;s130129;1129;IT & Komm;B;Rus
+Rus 130;s130130;1130;IT & Komm;D;Rus
+Rus 131;s130131;1131;Mat. Tek.;A;Rus
+Rus 132;s130132;1132;Mat. Tek.;B;Rus
+Rus 133;s130133;1133;Mat. Tek.;C;Rus
+Rus 134;s130134;1134;Fys. Nano;A;Rus
+Rus 135;s130135;1135;Fys. Nano;B;Rus
+Rus 136;s130136;1136;Fys. Nano;C;Rus
+Rus 137;s130137;1137;Fys. Nano;D;Rus
+Rus 138;s130138;1138;TBM;A;Rus
+Rus 139;s130139;1139;TBM;B;Rus
+Rus 140;s130140;1140;TBM;C;Rus
+Rus 141;s130141;1141;Space;A;Rus
+Rus 142;s130142;1142;Space;B;Rus
+Rus 143;s130143;1143;Space;D;Rus
+Rus 144;s130144;1144;Byg;A;Rus
+Rus 145;s130145;1145;Byg;B;Rus
+Rus 146;s130146;1146;Byg;C;Rus
+Rus 147;s130147;1147;Byg;D;Rus
+Rus 148;s130148;1148;IT & Komm;A;Rus
+Rus 149;s130149;1149;IT & Komm;B;Rus
+Rus 150;s130150;1150;IT & Komm;D;Rus
+Rus 151;s130151;1151;Mat. Tek.;A;Rus
+Rus 152;s130152;1152;Mat. Tek.;B;Rus
+Rus 153;s130153;1153;Mat. Tek.;C;Rus
+Rus 154;s130154;1154;Fys. Nano;A;Rus
+Rus 155;s130155;1155;Fys. Nano;B;Rus
+Rus 156;s130156;1156;Fys. Nano;C;Rus
+Rus 157;s130157;1157;Fys. Nano;D;Rus
+Rus 158;s130158;1158;TBM;A;Rus
+Rus 159;s130159;1159;TBM;B;Rus
+Rus 160;s130160;1160;TBM;C;Rus
+Rus 161;s130161;1161;Space;A;Rus
+Rus 162;s130162;1162;Space;B;Rus
+Rus 163;s130163;1163;Space;D;Rus
+Rus 164;s130164;1164;Byg;A;Rus
+Rus 165;s130165;1165;Byg;A;Rus
+Rus 166;s130166;1166;Byg;B;Rus
+Rus 167;s130167;1167;Byg;C;Rus
+Rus 168;s130168;1168;Byg;D;Rus
+Rus 169;s130169;1169;IT & Komm;A;Rus
+Rus 170;s130170;1170;IT & Komm;B;Rus
+Rus 171;s130171;1171;IT & Komm;D;Rus
+Rus 172;s130172;1172;Mat. Tek.;A;Rus
+Rus 173;s130173;1173;Mat. Tek.;B;Rus
+Rus 174;s130174;1174;Mat. Tek.;C;Rus
+Rus 175;s130175;1175;Fys. Nano;A;Rus
+Rus 176;s130176;1176;Fys. Nano;B;Rus
+Rus 177;s130177;1177;Fys. Nano;C;Rus
+Rus 178;s130178;1178;Fys. Nano;D;Rus
+Rus 179;s130179;1179;TBM;A;Rus
+Rus 180;s130180;1180;TBM;B;Rus
+Rus 181;s130181;1181;TBM;C;Rus
+Rus 182;s130182;1182;Space;A;Rus
+Rus 183;s130183;1183;Space;B;Rus
+Rus 184;s130184;1184;Space;D;Rus
+Rus 185;s130185;1185;Byg;A;Rus
+Rus 186;s130186;1186;Byg;B;Rus
+Rus 187;s130187;1187;Byg;C;Rus
+Rus 188;s130188;1188;Byg;D;Rus
+Rus 189;s130189;1189;IT & Komm;A;Rus
+Rus 190;s130190;1190;IT & Komm;B;Rus
+Rus 191;s130191;1191;IT & Komm;D;Rus
+Rus 192;s130192;1192;Mat. Tek.;A;Rus
+Rus 193;s130193;1193;Mat. Tek.;B;Rus
+Rus 194;s130194;1194;Mat. Tek.;C;Rus
+Rus 195;s130195;1195;Fys. Nano;A;Rus
+Rus 196;s130196;1196;Fys. Nano;B;Rus
+Rus 197;s130197;1197;Fys. Nano;C;Rus
+Rus 198;s130198;1198;Fys. Nano;D;Rus
+Rus 199;s130199;1199;TBM;A;Rus
+Rus 200;s130200;1200;TBM;B;Rus
+Rus 201;s130201;1201;TBM;C;Rus
+Rus 202;s130202;1202;Space;A;Rus
+Rus 203;s130203;1203;Space;B;Rus
+Rus 204;s130204;1204;Space;D;Rus
+Rus 205;s130205;1205;Byg;A;Rus
+Rus 206;s130206;1206;Byg;A;Rus
+Rus 207;s130207;1207;Byg;B;Rus
+Rus 208;s130208;1208;Byg;C;Rus
+Rus 209;s130209;1209;Byg;D;Rus
+Rus 210;s130210;1210;IT & Komm;A;Rus
+Rus 211;s130211;1211;IT & Komm;B;Rus
+Rus 212;s130212;1212;IT & Komm;D;Rus
+Rus 213;s130213;1213;Mat. Tek.;A;Rus
+Rus 214;s130214;1214;Mat. Tek.;B;Rus
+Rus 215;s130215;1215;Mat. Tek.;C;Rus
+Rus 216;s130216;1216;Fys. Nano;A;Rus
+Rus 217;s130217;1217;Fys. Nano;B;Rus
+Rus 218;s130218;1218;Fys. Nano;C;Rus
+Rus 219;s130219;1219;Fys. Nano;D;Rus
+Rus 220;s130220;1220;TBM;A;Rus
+Rus 221;s130221;1221;TBM;B;Rus
+Rus 222;s130222;1222;TBM;C;Rus
+Rus 223;s130223;1223;Space;A;Rus
+Rus 224;s130224;1224;Space;B;Rus
+Rus 225;s130225;1225;Space;D;Rus
+Rus 226;s130226;1226;Byg;A;Rus
+Rus 227;s130227;1227;Byg;B;Rus
+Rus 228;s130228;1228;Byg;C;Rus
+Rus 229;s130229;1229;Byg;D;Rus
+Rus 230;s130230;1230;IT & Komm;A;Rus
+Rus 231;s130231;1231;IT & Komm;B;Rus
+Rus 232;s130232;1232;IT & Komm;D;Rus
+Rus 233;s130233;1233;Mat. Tek.;A;Rus
+Rus 234;s130234;1234;Mat. Tek.;B;Rus
+Rus 235;s130235;1235;Mat. Tek.;C;Rus
+Rus 236;s130236;1236;Fys. Nano;A;Rus
+Rus 237;s130237;1237;Fys. Nano;B;Rus
+Rus 238;s130238;1238;Fys. Nano;C;Rus
+Rus 239;s130239;1239;Fys. Nano;D;Rus
+Rus 240;s130240;1240;TBM;A;Rus
+Rus 241;s130241;1241;TBM;B;Rus
+Rus 242;s130242;1242;TBM;C;Rus
+Rus 243;s130243;1243;Space;A;Rus
+Rus 244;s130244;1244;Space;B;Rus
+Rus 245;s130245;1245;Space;D;Rus
+Rus 246;s130246;1246;Byg;A;Rus
+Rus 247;s130247;1247;Byg;A;Rus
+Rus 248;s130248;1248;Byg;B;Rus
+Rus 249;s130249;1249;Byg;C;Rus
+Rus 250;s130250;1250;Byg;D;Rus
+Rus 251;s130251;1251;IT & Komm;A;Rus
+Rus 252;s130252;1252;IT & Komm;B;Rus
+Rus 253;s130253;1253;IT & Komm;D;Rus
+Rus 254;s130254;1254;Mat. Tek.;A;Rus
+Rus 255;s130255;1255;Mat. Tek.;B;Rus
+Rus 256;s130256;1256;Mat. Tek.;C;Rus
+Rus 257;s130257;1257;Fys. Nano;A;Rus
+Rus 258;s130258;1258;Fys. Nano;B;Rus
+Rus 259;s130259;1259;Fys. Nano;C;Rus
+Rus 260;s130260;1260;Fys. Nano;D;Rus
+Rus 261;s130261;1261;TBM;A;Rus
+Rus 262;s130262;1262;TBM;B;Rus
+Rus 263;s130263;1263;TBM;C;Rus
+Rus 264;s130264;1264;Space;A;Rus
+Rus 265;s130265;1265;Space;B;Rus
+Rus 266;s130266;1266;Space;D;Rus
+Rus 267;s130267;1267;Byg;A;Rus
+Rus 268;s130268;1268;Byg;B;Rus
+Rus 269;s130269;1269;Byg;C;Rus
+Rus 270;s130270;1270;Byg;D;Rus
+Rus 271;s130271;1271;IT & Komm;A;Rus
+Rus 272;s130272;1272;IT & Komm;B;Rus
+Rus 273;s130273;1273;IT & Komm;D;Rus
+Rus 274;s130274;1274;Mat. Tek.;A;Rus
+Rus 275;s130275;1275;Mat. Tek.;B;Rus
+Rus 276;s130276;1276;Mat. Tek.;C;Rus
+Rus 277;s130277;1277;Fys. Nano;A;Rus
+Rus 278;s130278;1278;Fys. Nano;B;Rus
+Rus 279;s130279;1279;Fys. Nano;C;Rus
+Rus 280;s130280;1280;Fys. Nano;D;Rus
+Rus 281;s130281;1281;TBM;A;Rus
+Rus 282;s130282;1282;TBM;B;Rus
+Rus 283;s130283;1283;TBM;C;Rus
+Rus 284;s130284;1284;Space;A;Rus
+Rus 285;s130285;1285;Space;B;Rus
+Rus 286;s130286;1286;Space;D;Rus
+Vektor 1;sXX0001;1021;Byg. Beton;A;Vektor
+Vektor 2;sXX0002;1022;Space;B;Vektor
+Vektor 3;sXX0003;1023;Elektro;C;Vektor
+Vektor 4;sXX0004;1024;IT & Komm;D;Vektor
+Vektor 5;sXX0005;1025;TBM;E;Vektor
+Vektor 6;sXX0006;1026;Byg. Design;F;Vektor
+Vektor 7;sXX0007;1027;Mat. Tek.;G;Vektor
+Vektor 8;sXX0008;1028;Fys. Nano;H;Vektor
+Hyttebums 1;sXX0009;1029;Space;Bums;Bums
+Hyttebums 2;sXX0010;1030;Elektro;Bums;Bums
+Hyttebums 3;sXX0011;1031;TBM;Bums;Bums
+KABS 1;sXX0012;1032;Mat. Tek.;I;KABS
+KABS 2;sXX0013;1033;Space;J;KABS

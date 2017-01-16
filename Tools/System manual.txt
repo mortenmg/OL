@@ -1,0 +1,206 @@
+Beer Counter User Manual
+
+Pleas read the introduction, you should only read the rest if you don't know how to use the program, or if you get in trouble.
+
+1. Introduction
+2. Setting up the program
+	2.1 Initial setup
+	2.2 Logging in as admin
+	2.3 Adding users
+	2.4 Adding products
+	2.5 Custom banner
+	2.6 Advanced settings
+	2.7 Using the soundboard feature
+	2.8 Changing database / Create new database
+	
+3. General use of the program
+	3.1 Buying a product.
+	3.2 Useing the multipliers
+	3.3 Canceling a transaction
+	3.4 If the program lock up
+	
+4. Editing and administration (cases)
+	4.1 Lost id card
+	4.2 Counting stock
+	4.3 Changeing total stock
+	4.4 Removing a user 
+	
+5. Generate a bill
+6. Compatibility
+7. Troubleshooting
+
+
+1. Introduction 
+	It is not required to read this entire document to use the program, but if you don't read it and fuck up it's your own fault.
+
+	Make sure you have the latest version of java installed. older versions may cause the program to malfunction.
+
+	Keep in mind that a database file called "beer.db" will be created in the same directory as the program launch file, 
+	DO NOT DELETE this unless you screw up and want to start over, everything regarding users, products and transactions
+	are stored in this file, deleting it will result in a loss of all data.
+
+	You may have to run the program as admin in order for it to run correctly.
+	
+	If you are experiencing any issues while useing the program that you can not fix by consulting
+	this manual, feel free to contact me by phone or SMS at +45 71 20 20 03 and i will see what i can do.
+	
+	I highly suggest to restart the system running this program once a day.
+	This have nothing to do with the program, but most systems run better if rebooted once in a while.
+
+        Notice that inside the program, a "." dot will be used as fraction seperator insterad of a "," comma.
+
+2. Setting up the program
+	2.1 Initial setupp
+		When launching the program for the first time, you will be prompted to choose a new database or an existing one.
+		Choosing a new database will ask you for a name (Any normal filename without special characters is usable)
+		choosing an existing database requires you to find it on your harddrive, normally it would exist in the same folder as the program itself
+		
+	2.2 Logging in as admin
+		Click on the barcode image in the center of the screen and enter "OLProgram" as the password.
+	
+	2.3 Adding users
+		There is two ways to add users:
+		1. import users -> Use the userTemplate.csv to create a semicolon seperated file in Excel.
+		2. Add users one by one by clicking "Add Users" and fill out the form.
+		
+		Notice: you must not leave any fields empty or the program may not function proberly.
+		
+	2.4 Adding products
+		Add products one by one by clicking "Add Product" and fill out the form.
+		
+	
+	2.5 Custom banner
+		To use a custom banner, click the edit banner button and choose your banner.
+		Changeing banner requires the program to restart to take effect.
+		A custom banner should follow these specifications:
+			- Width: max 100% of your screen width in pixels, but can be smaller.
+			- Height: Suggested 1/4 to 1/3 of your screen height in pixels. 
+			  The taller the image is, the less space there will be for the interface, 
+			  so pick the height with caution.
+			- The image file must be a PNG or JPG. For transparency use a PNG file. 
+			  Larger files may cause the system to slow down slightly.
+			  
+	2.6 Advanced settings
+		- Clear userlist: Removes all users from the list, including all transaction information.
+		- Clear productlist: Removes all products the list, including all transaction information. 
+		- Restore default banner
+		- Restore developer banner
+		- Clear user preferences: Removes all user set preferences such as custom banner and passwords
+		- Add password
+	
+	2.7 Using the soundboard feature
+		First, the built in soundboard currently only supports interrupting the music program SilverJuke.
+		It relies on an open source project called AwesomeButton made by Martin Tange (https://github.com/mktange/AwesomeButton)
+		The setup of AwesomeButton is not included with this system but can be found on GitHub.
+		
+		To setup the use of AwesomeButton inside this system
+		1. Go to Advanced settings in the admin menu
+		2. Set the IP and Port for the computer running SilverJuke and AwesomeButton
+		3. Edit the products that you want to trigger a sound
+		4. There are 3 options when editing the product
+			i.   Enabling / disabling the soundboard feature
+			ii.  The "soundstring" which is the command it sends to AwesomeButton. should be "hello" to play "hello.wav"
+			iii. The "soundmod" which is the modifier on which the sound should be triggered. If it is set to 5 for a product
+				 the sound will be triggered once 5 or more of this product is purchased
+		5. When done editing, save and go back to the main screen.
+
+		Note that only ONE sound will be plaid for every purchase. If a purchase is made that qualifies more than one sound to be
+		triggered only the first sound will be plaid. To avoid annoying issues or overuse, AwesomeButton has a preset delay of 30 seconds
+		between any soundrequests from the same source. 
+		
+	2.8 Changing database / Creating new database
+		To change or create a new database 
+			1. Login as admin
+			2. Click Advanced Settings
+			3. Click Change Database
+			4. Restart the program and follow the instructions on the screen.
+
+3. General use of the program
+	3.1 Buying a product
+		- Start by scanning a user barcode on the main screen
+		- A new screen will show a user window with a shopping bag and some information about the user.
+		- Scan any products barcode, if they are in the system, they will be added to the shopping bag
+		- Scan ANY user barcode to logout
+		
+	3.2 Useing the multipliers.
+		- When you wish to buy a large amount of one product, first scan the product, then a multiplier.
+		- The multiplier does not multiply, but simply sets the amount of the previous scanned item
+			- ex: Scan 1 beer -> Scan x30 = 30 beers
+			- ex: Scan 3 beers -> Scan 2 ciders -> scan x10 = 3 beers + 10 ciders
+			- ex: Scan 3 beers -> scan x10 = 10 beers
+		- The max amount allowed is 30 for each product when you use multipliers. 
+		- You can still add products above the 30, but this can only be done by scanning the product again,
+		  but you will only add one every time you scan the product. The following example is still possible
+		  even though it exceeds 30 products
+			- ex: Scan 1 beer -> scan x30 -> scan 1 cider -> scan 30 = 30 beers + 30 ciers.
+		- NOTICE THIS and inform your users:
+			- Beer and soda crates contains 30 units
+			- Cider crates containd 24 units
+	
+	3.3 Canceling a transaction
+		- While a user is shopping, you can always scan the barcode "404" to clear your shoppingbag and logout
+		  without buying anything. You are then required to log back in if you want to buy something.
+		  
+	3.4 If the program lock up
+		- The program is designed to save the database after every action (when shopping after the checkout)
+		  Therefore if the program locks up, no data will be lost, simply close the program by force
+		  (alt + F4 or ctrl+alt+del) and restart it.
+		- Exception: If the program locks up while a user is logged in, any products in his/her shoppingbag will
+		  not be saved unless you manage to log him out before closeing the program.
+		  
+4. Editing and administration
+	The following requires you to be logged in as admin.
+	To log in click the barcode on the start screen, and enter "OLProgram" as password
+	
+	4.1 If a user loses his/her ID card
+		- Find and select the user
+		- Select the barcode field
+		- Scan the new ID card
+		- Click save and you are done!
+	
+	4.2 Counting products
+		- Select the product you are counting
+		- Change the number in the "Current stock" field
+		- Click save
+		- Repeat for every product
+	
+	4.3 Changeing total stock
+		- Select the product you wish to change
+		- Click the "Edit" button
+		- Change the "Total Stock" Field. if you have bought more of the product, remember to add this to the old number or the waste will not be calculated correctly.
+		- Click save and you are done!
+		
+	4.4 Removing a user 
+		Warning, this removes any transactions for this user!!!!
+		- Find and select the user you want to remove
+		- Edit the user
+		- Check the box "Delete" in the bottom left corner
+		- Click save
+		
+5. Generate a bill
+	To generate a bill correctly, ensure that you have counted the current stock of your products correctly.
+	If current stock is not set correct, the program will not calculate the waste correctly
+	The exported bill is seperated with semicolon, and decimal numbers are delimited by comma,
+	this may be important depenending on the settings for the program you open the csv file in.
+	I suggest that the file is opend in Microsofts Excel or similar.
+
+5. Compatibility
+
+    Version 1.14 is tested and confirmed working on
+        - Windows 7  64bit
+        - Windows 10 64bit
+
+	Version 1.13 is tested and confirmed working on
+		- Windows 7 32/64 bit 
+		
+	This sofware as of version 1.10 is tested and confirmed running on following systems with the latest version of Java
+		- Ubuntu 11.04
+		- Ubuntu 10.04
+		- Windows XP
+		- Windows Vista
+		- Windows 7 32/64 bit
+		- Windows 8
+		
+7. Troubleshooting
+	If any unexpected error occur or emergency support is needed, please contact me on +45 71 20 20 03.
+	Not urgent help, please contact me by facebook or email at mortenmg@gmail.com

@@ -1,0 +1,237 @@
+Changelog for DTU Studiestartens ØL System
+
+Changes considered for future releases (note that these are NOT implemented yet nor planned):
+    - Correct individual bills within the program
+    - Make a single user or entire group "Free" as in, everyone pays for that user/group as waste.
+    - Network supported system for multiple machines on the same database (2 computers, 1 bill)
+    - Import users directly from excel sheet (preferably generate barcodes from Inges sheet aswell)
+    - A "pick random" function to buy a random product on the list
+    - Enable/disable stats
+    - Remove product
+
+Overview of most recent changes:
+
+v1.14 (Changes for studiestarten 2016)
+    - IMPORTANT CHANGES
+        - users imported via .csv files must be in UFT-8 format! Java suffers from some encoding issues in Windows 10!
+          the program may work, but display characters wrong and encoding trouble with excel afterwards may occour!
+        - A new line including gender(sex) of the users should be included in the second sheet in the excel
+          using M(Male/Mand) to denote a Male user and F(Female) or K(Kvinde) to denote a Female user
+
+    - New features
+        - Stats on the front page is now normalized such that teams of varying size can still compete on equal terms.
+        - Stats on the front page can now be neutralized (admin -> advanced settings -> neutralize stats)
+          such that all bars is now a solid color to eleminate drinking encuragement
+        - Add user now includes a field to state the users sex
+        - Edit user now includes a field to edit the users Sex
+        - Waste calculation in the Edit Product view now auto updates when current stock is changed
+
+    - Minor changes
+        - System manual updated with information regarding v1.14
+
+    - Bug fixes
+        - Advanced settings -> clear userlist now gains prober access to the database. (it now works again)
+
+    - System chances
+        - External libaries updated for better windows 10 support.
+        - Now running with SQLite jdbc v3.8.11.1 for improved database performance
+            - time to recalculate stats reduced by a factor 25 (from approx 50ms to 2ms)
+
+    - Known issues
+        - Windows 10 may have trouble accessing registry, even is user is admin.
+          If thsi causes trouble it can be fixed by manually adding the registry key "Prefs" to HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft
+        - On some systems if the endoding of the .csv file on user import is not set to UTF-8 some european characters
+          may not be recognised. This can be fixed by opening the .csv in notepad, click "save as",
+          choose encoding UTF-8 (next to the save button), remember to choose filetype -> all files and put .csv after the filename
+
+v1.13 (Changes for Studiestart 2015)
+	- IMPORTANT!
+		- This update contains changes to the database structure. Upgrading to v1.13 from any versions from v1.9 and newer should
+		  simply update the database to match the new structure. Any transactions saved may be LOST upon updating, so i STRONGLY recommend
+		  only to update a fresh setup.
+		  
+	- New features
+		- Preview the bill before exporting!
+			A small button called "Preview" is added in the bottom left corner of the Generate Bill menu
+			This allows you to see the total revenue before exporting the final bill.
+		- Transaction History 
+			A fully detailed transaction history can now be seen for any single user by going into the admin menu -> Edit user -> Details.
+			Or see the transaction history for everyone by going to admin menu -> Transaction History in the bottom right corner.
+		  	Edits of these transactions is not yet possible.
+		- Added a menu for when the user runs the system the very first time asking for the creation of a new database, or to use an existing database
+		- The database file can now have ANY name, as long as it has the extention ".db"
+	
+	- Changes and fixes
+		- The size of the barcode image on the start page is roughly halved to make more room for statistics on smaller screens.
+		- Buttons that don't do anything are now disabled to avoid confusion.
+		- Button to Edit team image are now changed to display a full Transaction History. (The feature was never implamented anyways)
+		- All export buttons in the Advanced Settings is now disabled, they are unused, all data can be extracted directly from the database file.
+		- Now accepts names with apostrophe < ' > in it.
+		- User edits no longer conflict with a users own barcode.
+	
+	- System changes
+		- Transactions are now saved in a more clever way that allows for faster response times and allows the construction of individual reciepts.
+		  Converting to 1.13 with an older database may cause trouble.
+		- Some actions in the admin panel now requires fewer resources which should improve performance slightly on slower systems
+		  
+	- Known issues
+		- This version is only tested on W7 64bit
+		- Some export paths for the bill may cause the system to crash, reason is still unknown, just retry.
+		- Clicking the console in the settings may cause the program to exit the settings screen
+
+v1.12 (Hotfix 2015-08-10)
+	- System rebuilt for java 8.51 to fix some java introduced errors
+
+	- Known Issues
+		- This version is only tested on W7 64bit
+		- Some export paths for the bill may cause the system to crash, reason is still unknown, just retry.
+		- Clicking the console in the settings may cause the program to exit the settings screen
+		
+v1.11 (Changes and fixes for Optur 2015)
+	- New features
+		- The system is now automatically backwards compatible with databases created in older versions (Atleast v1.9 and forward)
+		- Many fields now tell the user if the input data is valid by turning red or green (applies to add and edit user and product
+		- Added possibility to add an extra fee to everyone who already share the waste. So adding 200 as extra fee for 100 people will make everyone pay 2 more in total.
+		
+	- Changes and fixes
+		- Now calculates correctly when shared on specific groups
+		- Checkout times are now reduced from 300-500 ms to 25-100ms depending on the size of checkout.
+		- Front page stats now have greatly improved performance which further increase the speed and consistency of checkouts.
+		- Previous known issues that slowed down the system after excessive use are now greatly reduced.
+		
+	- Known issues
+		- This version is only tested on W7 64bit
+		- Some export paths for the bill may cause the system to crash, reason is still unknown, just retry.
+
+v1.10 (Changes in honor of HHH)
+	- New features
+		- The system can now trigger sounds with the software AwesomeButton for SilverJuke
+	  	 https://github.com/mktange/AwesomeButton/releases/download/1.0/ExampleSetup.zip
+	   
+	  	 A custom sound can be played when a customer purchases a specific amount of a product.
+	  	 Only one one sound can be launched every purchase.
+	  	 These sounds can only be added by editing a product after adding it, and can be changed at any time.
+	  	 The soundsstring entered to define what sound a product should be able to trigger is defined by AwesomeButton.
+		 AwsomeButton only supports .wav soundbites and they are listed in the file sounds.txt where all sounds should be defined.
+	   
+	     AwesomeButton can be configured in the Admin menu -> Advanced settings under "Soundboard" settings.
+	     
+	- Changes and fixes
+		- Fixed an issue where two users with the same name but different barcodes would interfere with each other. 
+	 	  Users should now again be able to have identical names without any problems.
+	
+		- Fixed an issue where a users barcode could be changed to a barcode that was already assigned to another user.
+	  	  Barcodes are now ALWAYS unique to only one user.
+	  
+		- Added user barcodes to the list of users under the admin page to distinguish between users with identical names.
+		
+		- Fixed an issue when a product had numbers in its name it could mess with the amount actually purchased.
+	
+	- Known issues
+		- This version is not tested on anything but Windows 7
+		- Checkout time may be slowed down the longer the system is used
+	
+
+v1.9 (Developed for rustours 2014)
+	- Can now set a custom password. A master password will still remain for support, but it is changed.
+	- Password can no longer be set to empty
+	- Can now set a custom welcome text
+	- Can now choose what groups should share waste and who should not.
+	- Increased checkout performance dramatically (improved by 50%) should give a faster and smoother checkout, and a faster recalculation of the stats.
+
+v1.8.1
+	- Can now again properly create a new database on a new system (Hotfix for bug introduced in 1.8)
+
+v1.8
+	- Added database feature to return all ranks in the current data set.
+	- Added custom ranks, tho only addable through from an imported user sheet. 
+	- Added delimiter changer so both dot and comma can be used ad a decimal indicator
+	- Disabled the "Ignore crew" feature from Export bill due to the lack of support for costum ranks
+
+v1.7
+	- Added possibility to change the name length in the stats
+	- Added possibility to sort groups in decending order purchases
+	- Added possibility to limit the number of teams shown in the stats
+
+v1.6
+	- Amount barcodes implemented:
+		Amount barcodes are barcodes from 1-30 that sets the amount of the last scanned product to the corresponding value.
+		Ex: i scan 1 beer, and then the barcode "30". Then you will purchase 30 beers
+		Ex: i scan 3 beers, and then the barcode "10". Then you will purchase 10 beers.
+		The max amount you can buy with the amount barcodes is 30 per transaction per product.
+	
+	- Users can now cancel a purchase by scanning barcode 404.
+	
+	- Import User
+		- Support for commar seperated files (before only semicolon seperated files was supported)
+		- Now Automaticly detects wether an imported file is seperated by comma or semicolon
+		- No longer skips the first line of the CSV file.
+		
+	- Edit User
+		- A pie chart will now display with the amounts a user have bought when you enter the "Edit User" menu.
+		- A total price (without waste) is now calculated for a user when you enter the "Edit User" menu.
+		
+	- Generate Bill
+		- You now have the option to ignore waste for the crew.
+		- It is required that all the new students ranks are set to "RUS" and nothing els, the case is irellevant.
+	
+	- Login / Main screen
+		- Added a barchart showing what the individual teams have bought compared to eachother.
+		
+	- Bugfixes
+		- It should no longer require admin rights to run the program proberly (May still be required on some systems)
+		- Scanning a multiplier or a product while not logged should no longer lock up the program.
+		- Fixed an issue where the Advanced settings window would open multiple times.
+
+	
+v1.5
+	- Advanced settings
+		- Export to CSV implemented for 
+			- User list
+			- Action log
+			- Transaction log (for manual calculation)
+	- Admin
+		- The "Generate bill" button is now active and exports a CSV.
+		  The bill contains the total amount a user have purchased of every product and a total price for vvery user
+		- It is now possible to change the total stock for a product
+		- Disabled the studynumber field from add/edit user
+		- Added a posibility to change the total stock, incase of wrong input or you get more of the product
+		  This does NOT change current stock, so if you add more to total stock, remember to add them to current stock aswell
+		- Added a "Waste" field in Edit Product that shows the current waste of the product
+	  
+	  
+v1.4 (Released for rustours summer 2013)
+	- Program should now launch proberly, and banners can be placed anywhere on the computer.
+	  Banner images should not be moved on disk when they are applied as banner.
+
+v1.3
+	- Broken launcher
+		- Banner images had to be at C:/images/banner.png
+
+v1.2
+	- Admin
+		- Remove single user and all transactions from that user. Once a user is removed, all data regarding this user is lost.
+		- Advanced settings
+			- Clear user table now implemented. clearing the user table will also clear the transaction table.
+			- Clear product table now implemented. Clearing the product table will completely reset the transaction table, deleting it and creating a new table.
+		- Edit banner is now persistent, but requires the program to restart to take effect.
+		  A custom banner should follow these specifications:
+			- Width: max 100% of your screen width in pixels, but can be smaller.
+			- Height: Suggested 1/4 to 1/3 of your screen height in pixels. The taller the image is, the less space there will be for the interface, so pick the height with caution.
+			- The image file must be a PNG or JPG. For transparency use a PNG file. Larger files may cause the system to slow down slightly.
+	- General
+		- Decresed size of the software to improve stability and speed.
+		- Database file renamed to beer.db. if you wish to use an old database file, rename it to beer.db
+
+v1.1
+	- Products
+		- Changes to stock now apply proberly. Old products must be recreated for the current stock counter to function proberly. (eventually just delete beer.db)
+		- Implemented a bought counter for every product
+	
+	- Greatly improved the speed of the shopping bag / checkout screen when a product barcode is scanned
+
+v1
+	- Barcodes
+		- Now correctly accept numbers up to 2^63-1.
+		- Users is now always barcodes shorter than 5 digits.
+		- Products is now always more than 5 digits.

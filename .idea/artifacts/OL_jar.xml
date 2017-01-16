@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="OL:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OL_jar</output-path>
+    <root id="archive" name="OL.jar">
+      <element id="module-output" name="OL" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jfreechart-1.0.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jcommon-1.0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Database/sqlite-jdbc-3.8.11.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jfreechart-1.0.14.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

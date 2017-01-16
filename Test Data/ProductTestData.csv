@@ -1,0 +1,11 @@
+Navn;Antal;Pris;Stregkode;Type
+Guld Øl;500;4;xxxx1;Beer
+Classic;250;4;xxxx2;Beer
+Grøn Tuborg;500;4;xxxx3;Beer
+Cola;300;5;xxxx4;Soda
+Fanta;150;5;xxxx5;Soda
+Faxe Kondi;200;5;xxxx6;Soda
+Sommersby;300;10;xxxx7;Cider
+Garage;100;10;xxxx8;Cider
+Cocio;350;8;xxxx8;Cocoa
+Icetea;50;4;xxxx9;Other
